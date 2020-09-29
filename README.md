@@ -15,3 +15,5 @@ $ npx create-react-app ps-flux
 ```bash
 $ npm i flux@3.1.1 react-router-dom@5.0.0 bootstrap@4.3.1
 ```
+
+## Create a Mock API
