@@ -6,7 +6,12 @@ class CoursesPage extends React.Component {
     courses: [],
   };
 
+  componentDidMount() {
+    getCourses().then((courses) => this.setState({ courses: courses }));
+  }
+
   render() {
+    console.log(this.state);
     return <h2>Courses</h2>;
   }
 }
