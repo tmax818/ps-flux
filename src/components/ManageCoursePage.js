@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import CourseForm from "./CourseForm";
 
 const ManageCoursePage = (props) => {
-  console.log(props);
+  const [course, setCourse] = useState({
+    id: null,
+    slug: "",
+    title: "",
+    authorId: null,
+    category: "",
+  });
+
+  const handleTitleChange = (e) => {
+    debugger;
+  };
+
   return (
     <div>
       <h2>Manage Course</h2>
-      {/* <Prompt when={true} message="what???" /> */}
-      {props.match.params.slug}
-      <CourseForm />
+
+      <CourseForm course={course} onTitleChange={handleTitleChange} />
     </div>
   );
 };

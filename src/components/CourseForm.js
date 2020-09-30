@@ -11,7 +11,8 @@ function CourseForm(props) {
             type="text"
             name="title"
             className="form-control"
-            value=""
+            onChange={props.onTitleChange}
+            value={props.course.title}
           />
         </div>
       </div>
