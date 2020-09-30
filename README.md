@@ -43,3 +43,7 @@ $ npm i -D cross-env@5.2.0 npm-run-all@4.1.5 json-server@0.15.0
 ## Hooks
 
 - Refactor [CoursePage.js](src/components/CoursesPage.js)
+
+## Controller Views
+
+## Initial Configuration (React Router)
