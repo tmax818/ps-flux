@@ -1,7 +1,6 @@
 import React from "react";
 
 const ManageCoursePage = (props) => {
-  debugger;
   console.log(props);
   return (
     <div>
