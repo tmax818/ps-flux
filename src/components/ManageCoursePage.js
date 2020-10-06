@@ -10,17 +10,15 @@ const ManageCoursePage = (props) => {
     category: "",
   });
 
-  const handleTitleChange = (e) => {
-    debugger;
-    const updatedCourse = { ...course, title: e.target.value };
-    setCourse(updatedCourse);
+  const handleChange = (e) => {
+    setCourse({ ...course, [e.target.name]: e.target.value });
   };
 
   return (
     <div>
       <h2>Manage Course</h2>
 
-      <CourseForm course={course} onTitleChange={handleTitleChange} />
+      <CourseForm course={course} onChange={handleChange} />
     </div>
   );
 };

@@ -11,7 +11,7 @@ function CourseForm(props) {
             type="text"
             name="title"
             className="form-control"
-            onChange={props.onTitleChange}
+            onChange={props.onChange}
             value={props.course.title}
           />
         </div>
@@ -41,8 +41,9 @@ function CourseForm(props) {
             type="text"
             id="category"
             name="category"
+            onChange={props.onChange}
             className="form-control"
-            value=""
+            value={props.course.category}
           />
         </div>
       </div>
