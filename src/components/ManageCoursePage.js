@@ -12,6 +12,8 @@ const ManageCoursePage = (props) => {
 
   const handleTitleChange = (e) => {
     debugger;
+    const updatedCourse = { ...course, title: e.target.value };
+    setCourse(updatedCourse);
   };
 
   return (
