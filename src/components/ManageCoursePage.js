@@ -18,6 +18,7 @@ const ManageCoursePage = (props) => {
   function handleSubmit(e) {
     e.preventDefault();
     courseApi.saveCourse(course)
+    props.history.push("/courses")
 
   }
 

@@ -72,11 +72,11 @@
     },
     {
       "id": 11,
-      "slug": "asdfasdfsss",
-      "title": "asdfasdfsss",
+      "slug": "test-title",
+      "title": "test title",
       "authorId": 2,
-      "category": "asdfasdf",
-      "createdAt": 1602705618069
+      "category": "test category",
+      "createdAt": 1602705848838
     }
   ],
   "authors": [
