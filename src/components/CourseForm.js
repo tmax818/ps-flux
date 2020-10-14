@@ -1,21 +1,17 @@
 import React from "react";
+import TextInput from './common/TextInput'
 
 function CourseForm(props) {
   return (
     <form>
-      <div className="form-group">
-        <label htmlFor="title">Title</label>
-        <div className="field">
-          <input
+      <TextInput
             id="title"
-            type="text"
-            name="title"
-            className="form-control"
+            label="Title"
             onChange={props.onChange}
+            name="title"
             value={props.course.title}
           />
-        </div>
-      </div>
+      
 
       <div className="form-group">
         <label htmlFor="author">Author</label>
